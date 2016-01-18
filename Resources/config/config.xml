@@ -30,7 +30,7 @@
             <argument type="service" id="hautzi_system_mail.system_mailer.mail_definition.provider_symfony"/>
             <argument type="service" id="hautzi_system_mail.system_mailer.mail_definition.parser_xml"/>
             <argument type="service" id="hautzi_system_mail.system_mailer.mailer.swift_mailer"/>
-            <argument type="expression">service('request_stack').getMasterRequest().getLocale()</argument>
+            <argument type="expression">service('translator').getLocale()</argument>
             <argument></argument>
         </service>
 
